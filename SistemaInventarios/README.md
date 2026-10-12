@@ -10,7 +10,7 @@ Diseñar un sistema que facilite el control de productos, la trazabilidad de mov
 
 ## Integrante
 
-- `ricardoNP51`, cuenta de GitHub responsable de la actividad individual identificada como Equipo 3.
+- `ricardoNP0`, cuenta de GitHub responsable de la actividad individual identificada como Equipo 3.
 
 ## Tecnologías utilizadas
 

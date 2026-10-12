@@ -1,0 +1,14 @@
+# Archivos del sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Archivos temporales
+*.tmp
+*.log
+~$*
+
+# Variables de entorno
+.env
+.env.*

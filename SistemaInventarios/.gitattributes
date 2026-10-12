@@ -1,0 +1,7 @@
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.jpg binary
+*.png binary
+*.md text eol=lf
+*.sql text eol=lf

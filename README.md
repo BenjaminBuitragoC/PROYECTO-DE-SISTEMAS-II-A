@@ -33,7 +33,8 @@ Desarrollar un sistema de inventarios que proporcione información confiable y a
 
 ## Prototipo Figma
 
-El archivo [enlace_figma.md](figma/enlace_figma.md) contiene el espacio destinado al enlace del prototipo. El enlace compartido de Figma está pendiente de incorporación.
+- [Ver el prototipo del Sistema de Gestión de Inventarios en Figma](https://www.figma.com/design/Zvzj1aqG3RcvZ2ppyhYkz3/Sin-t%C3%ADtulo?node-id=0-1&t=D72Z8bZue5AtnoMw-1)
+- El enlace también está registrado en [figma/enlace_figma.md](figma/enlace_figma.md).
 
 ## Estado del proyecto
 

@@ -1,0 +1,175 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\test\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\database\\script_inicial.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\script_inicial.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\src\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\.gitkeep||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\figma\\enlace_figma.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:figma\\enlace_figma.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Riesgos.xlsx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\Riesgos.xlsx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Backlog.xlsx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\Backlog.xlsx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Requisitos.docx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\Requisitos.docx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Canvas.pdf||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\Canvas.pdf||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\database\\script_inicial.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:database\\script_inicial.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-13T03:25:11.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".gitkeep",
+              "DocumentMoniker": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\test\\.gitkeep",
+              "RelativeDocumentMoniker": "test\\.gitkeep",
+              "ToolTip": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\test\\.gitkeep",
+              "RelativeToolTip": "test\\.gitkeep",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-13T03:24:15.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "script_inicial.sql ",
+              "DocumentMoniker": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\database\\script_inicial.sql",
+              "RelativeDocumentMoniker": "database\\script_inicial.sql",
+              "ToolTip": "script_inicial.sql ",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-10-13T03:23:41.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".gitkeep",
+              "DocumentMoniker": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\src\\.gitkeep",
+              "RelativeDocumentMoniker": "src\\.gitkeep",
+              "ToolTip": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\src\\.gitkeep",
+              "RelativeToolTip": "src\\.gitkeep",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-13T03:22:42.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "enlace_figma.md",
+              "DocumentMoniker": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\figma\\enlace_figma.md",
+              "RelativeDocumentMoniker": "figma\\enlace_figma.md",
+              "ToolTip": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\figma\\enlace_figma.md",
+              "RelativeToolTip": "figma\\enlace_figma.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-13T03:22:06.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Riesgos.xlsx",
+              "DocumentMoniker": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Riesgos.xlsx",
+              "RelativeDocumentMoniker": "docs\\Riesgos.xlsx",
+              "ToolTip": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Riesgos.xlsx",
+              "RelativeToolTip": "docs\\Riesgos.xlsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2026-10-13T03:17:40.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Backlog.xlsx",
+              "DocumentMoniker": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Backlog.xlsx",
+              "RelativeDocumentMoniker": "docs\\Backlog.xlsx",
+              "ToolTip": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Backlog.xlsx",
+              "RelativeToolTip": "docs\\Backlog.xlsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2026-10-13T03:17:31.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Requisitos.docx",
+              "DocumentMoniker": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Requisitos.docx",
+              "RelativeDocumentMoniker": "docs\\Requisitos.docx",
+              "ToolTip": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Requisitos.docx",
+              "RelativeToolTip": "docs\\Requisitos.docx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002149|",
+              "WhenOpened": "2026-10-13T03:17:20.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Canvas.pdf",
+              "DocumentMoniker": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Canvas.pdf",
+              "RelativeDocumentMoniker": "docs\\Canvas.pdf",
+              "ToolTip": "C:\\Users\\pizar\\OneDrive\\Escritorio\\PROYECTO-DE-SISTEMAS-II-A\\docs\\Canvas.pdf",
+              "RelativeToolTip": "docs\\Canvas.pdf",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-13T03:17:06.297Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

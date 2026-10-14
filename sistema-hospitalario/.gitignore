@@ -1,0 +1,23 @@
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.vs/
+*.suo
+*.user
+
+# Archivos temporales de Office
+~$*
+
+# Dependencias y compilación
+node_modules/
+bin/
+obj/
+dist/
+build/
+
+# Variables de entorno
+.env

@@ -20,7 +20,7 @@ la **Parte A** resume el estado real y lo que queda pendiente; la **Parte B** es
 | Sprint 1 | 07/09 – 21/09/2026 | 49 | ✅ Entregado | 17 historias: sitio público, autenticación, panel y gestión de ganado. Defensa: 30/09/2026 |
 | Sprint 2 | 21/09 – 06/10/2026 | 48 | ✅ Entregado | 13 historias + correcciones del jurado + HU-66, HU-67 y HU-74. Release `sprint-2` (06/10/2026) |
 | Sprint 3 | 19/10 – 02/11/2026 | 48 | ⏳ Pendiente | 15 historias: dashboard, preñez, tratamientos, socios, notificaciones, asistente y Excel |
-| Release 2 | Después del semestre | 53 | ⏳ Pendiente | 20 historias de menor prioridad |
+| Release 2 | Después del semestre | 64 | ⏳ Pendiente | 20 historias de menor prioridad |
 | Historias nuevas (Sprint 2) | Sin sprint asignado | 29 | ⏳ Pendiente | 8 historias propuestas (HU-64, 65, 68–73) |
 
 **Avance del compromiso del semestre:** 97 de 145 puntos (67 %). Quedan los 48 puntos del Sprint 3.
@@ -68,7 +68,7 @@ HU-25 reasignar animales · HU-53 editar o desactivar corral · HU-29 registrar 
 HU-40 alertas · HU-41 centro de notificaciones · HU-36.1 consultas de cantidades al asistente ·
 HU-38 aviso de datos faltantes · HU-44 exportar ganado a Excel · HU-43.1 plantilla de importación · HU-43.2 importar desde Excel.
 
-**Release 2 (53 puntos)** — ordenadas por prioridad.
+**Release 2 (64 puntos)** — ordenadas por prioridad.
 HU-11 recuperar contraseña · HU-28 historial de vacunación con filtros · HU-13 gráficos · HU-59 vencimiento de la prueba gratuita ·
 HU-49 cambiar de plan · HU-33 roles personalizados · HU-45.2 vacunaciones sin conexión · HU-43.3 reporte de errores de importación ·
 HU-36.2 estado sanitario por asistente · HU-39 recordatorio manual · HU-31 editar o eliminar socio · HU-35 actividad de colaboradores ·
@@ -356,7 +356,7 @@ HU-21 se acota a eliminar registros erróneos; las ventas y fallecimientos pasan
 
 Orden sugerido dentro del Sprint 3: primero HU-56 y HU-40, porque el dashboard (HU-12) y el asistente (HU-38) dependen de ellas.
 
-#### 7.4 Release 2 · backlog futuro · 53 puntos · ⏳ Pendiente
+#### 7.4 Release 2 · backlog futuro · 64 puntos · ⏳ Pendiente
 
 Estas historias no entran en el compromiso del semestre. Están ordenadas por prioridad: si sobra capacidad, se toman desde arriba.
 

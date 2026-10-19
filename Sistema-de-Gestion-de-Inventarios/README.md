@@ -47,3 +47,8 @@ Sistema-de-Gestion-de-Inventarios/
 Repositorio oficial: https://github.com/BenjaminBuitragoC/PROYECTO-DE-SISTEMAS-II-A
 
 Rama del equipo: `equipo3-inventarios`. Los cambios se presentan mediante un Pull Request hacia `main` para revisión del docente.
+
+## Enlace al prototipo Figma
+[Consultar el diseño de inventarios](https://www.figma.com/design/9vZMiaDfXelRAyY4aYGxlj/Sin-t%C3%ADtulo?node-id=0-1)
+
+La referencia también se encuentra en [figma/enlace_figma.md](figma/enlace_figma.md).

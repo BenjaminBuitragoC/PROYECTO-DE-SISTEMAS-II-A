@@ -10,7 +10,7 @@ Diseñar y desarrollar un sistema informático que permita gestionar de manera e
 
 ## Integrantes del equipo
 
-- Nihaht Montes Proyecto de Sistemas II
+- Nihaht Poly Montes Peñarrieta - Proyecto de Sistemas II
 - Danilo Romero Daza - Proyecto de Sistemas I
 - Sandro Fernando Muñoz Aranda - Proyecto de Sistemas I
 
@@ -24,11 +24,28 @@ Diseñar y desarrollar un sistema informático que permita gestionar de manera e
 
 ## Prototipo Figma
 
-Pendiente
+Disponible en [figma/enlace_figma.md](figma/enlace_figma.md).
 
 ## Estado del proyecto
 
 En desarrollo – Sprint 1
+
+## Estructura del repositorio
+
+| Carpeta | Contenido |
+|---|---|
+| `docs/` | Backlog, modelo Canvas, requisitos y matriz de riesgos |
+| `figma/` | Enlace al prototipo navegable |
+| `database/` | Scripts y modelo de la base de datos en SQL Server |
+| `src/` | Código fuente del sistema en C# |
+| `tests/` | Pruebas del sistema |
+
+## Cómo contribuir
+
+1. Crear una rama propia a partir de `Gastronomia-NihahtMontes`; no trabajar directamente sobre `main`.
+2. Registrar commits descriptivos con prefijo (`docs:`, `feat:`, `fix:`).
+3. Integrar los cambios mediante un Pull Request revisado por otro integrante del equipo.
+4. No incluir contraseñas, tokens ni cadenas de conexión en el repositorio.
 
 ## Licencia
 

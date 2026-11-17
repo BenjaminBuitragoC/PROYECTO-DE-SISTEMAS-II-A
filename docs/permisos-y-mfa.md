@@ -11,8 +11,8 @@
 | Revisor | Espinoza | Sí | Sí (ramas de docs/tests) | Sí (aprueba) | No |
 
 ## Permisos reales vs. necesarios
-1. **Permisos actuales:** **[COMPLETAR]** en Settings → Collaborators and teams, anotar el rol (Read/Triage/Write/Maintain/Admin) de cada integrante.
-2. **Comparación:** cualquier integrante con rol *Admin* que no sea el líder tiene más privilegio del necesario.
+1. **Permisos actuales:** en Settings → Collaborators del fork **no hay colaboradores agregados**. Hoy solo el líder (propietario, con rol Admin) trabaja en el fork; los demás integrantes aún no tienen acceso de escritura. En el repo del curso no hay permiso de escritura (error 403 al hacer `git push`), por eso se contribuye con fork + Pull Request.
+2. **Comparación:** el propietario concentra todos los permisos (riesgo de punto único de fallo). Los demás integrantes no pueden crear ramas ni revisar formalmente desde el fork hasta que se les asigne un rol. Sí pueden comentar PR públicos.
 3. **Asignación de privilegios mínimos propuesta:**
 
 | Integrante | Rol GitHub recomendado | Justificación |

@@ -1,0 +1,7 @@
+{
+  "name": "sistema-gestion-eventos",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": { "test": "node --test tests/validaciones.test.js" },
+  "license": "MIT"
+}

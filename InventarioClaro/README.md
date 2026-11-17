@@ -33,7 +33,22 @@ La aplicación todavía no está implementada; estas tecnologías describen la d
 - [`docs/Requisitos.docx`](docs/Requisitos.docx): requisitos funcionales, no funcionales y reglas de negocio.
 - [`docs/Backlog.xlsx`](docs/Backlog.xlsx): historias iniciales y criterios de aceptación.
 - [`docs/Riesgos.xlsx`](docs/Riesgos.xlsx): riesgos y acciones de mitigación.
+- [`docs/guia-reutilizacion.md`](docs/guia-reutilizacion.md): plantilla de pruebas que otros equipos pueden adaptar.
+
+## Cómo comprobar una salida de inventario
+
+El requisito RF03 pide registrar una salida solo cuando haya existencias suficientes y guardar el movimiento en el historial. El modelo SQLite descuenta las unidades al registrar la salida. Si el producto está inactivo o la cantidad supera el saldo, rechaza el movimiento.
+
+| Ejemplo con 10 unidades | Saldo esperado | Historial esperado |
+| --- | --- | --- |
+| Retirar 3 | 7 | Un movimiento nuevo por 3 unidades |
+| Retirar 10 | 0 | Un movimiento nuevo por 10 unidades |
+| Intentar retirar 11 | 10 | Sin movimiento nuevo |
+
+La función de ejemplo en [`src/stock.py`](src/stock.py) calcula el saldo antes de guardar. Acepta cantidades enteras positivas. Las pruebas de esa función se ejecutan desde `InventarioClaro/` con `python3 -m unittest discover -s tests -v`. El historial de movimientos se comprueba en la base de datos, ya que la función solo calcula el saldo.
+
+Para proponer un cambio en esta regla, abre un Pull Request hacia la rama de trabajo, indica el requisito afectado y adjunta el resultado de las pruebas. Usa productos ficticios y pide a otro integrante que revise al menos el caso en que el saldo llega a cero y el intento de retirar más unidades de las disponibles.
 
 ## Estado del proyecto
 
-La estructura, el modelo de datos, la documentación y el prototipo inicial están preparados. El código de aplicación y las pruebas automatizadas figuran como trabajo pendiente en el backlog. No se ha realizado un despliegue.
+La estructura, el modelo de datos, la documentación y el prototipo inicial están preparados. El ejemplo en Python y sus pruebas cubren el cálculo de una salida. La aplicación completa sigue pendiente en el backlog.

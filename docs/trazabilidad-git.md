@@ -12,7 +12,9 @@ Las fechas corresponden a los metadatos del historial Git mostrados con zona `-0
 
 ## Incidencias y Pull Requests
 
-El repositorio contiene Pull Requests públicos de documentación, pero las propuestas visibles corresponden a ramas de otros participantes. No se atribuyen a la rama del Equipo 3. El Pull Request de esta práctica, si se publica, se añadirá aquí cuando exista un enlace verificable.
+El [Pull Request #8](https://github.com/BenjaminBuitragoC/PROYECTO-DE-SISTEMAS-II-A/pull/8), “Equipo 3 Sistema de inventarios — Alison Pizarro”, figura abierto desde `AlisonPizarro_Equipo3-inventarios` hacia `main`. Es la propuesta previa de estructura inicial, no esta actividad. El [Pull Request #13](https://github.com/BenjaminBuitragoC/PROYECTO-DE-SISTEMAS-II-A/pull/13) usa el nombre de rama `docs-mejora-proyecto`, pero fue abierto por otra persona para el proyecto de gastronomía; por eso esta práctica usa una rama personal con sufijo y no altera el trabajo ajeno. El [Pull Request #16](https://github.com/BenjaminBuitragoC/PROYECTO-DE-SISTEMAS-II-A/pull/16) también propone guía de reutilización desde un fork de otra persona.
+
+El cambio actual está preparado localmente en `docs-mejora-proyecto-alisonpizarro`, derivado de la rama del Equipo 3. El nuevo Pull Request debe apuntar a `AlisonPizarro_Equipo3-inventarios`, no a `main`. El enlace de la solicitud propia queda pendiente de publicación con la cuenta GitHub correcta.
 
 ## Uso durante la investigación de defectos
 

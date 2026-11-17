@@ -1,0 +1,22 @@
+# Credenciales y configuración local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Archivos temporales y logs
+*.log
+*.tmp
+
+# Entornos de desarrollo
+.vs/
+.vscode/
+.idea/
+node_modules/
+bin/
+obj/
+dist/
+coverage/
+__pycache__/
+.pytest_cache/

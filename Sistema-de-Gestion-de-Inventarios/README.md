@@ -31,6 +31,7 @@ Sistema-de-Gestion-de-Inventarios/
     Requisitos.docx
     Backlog.xlsx
     Riesgos.xlsx
+    guia-reutilizacion.md
   figma/
     enlace_figma.md
   src/
@@ -46,7 +47,9 @@ Sistema-de-Gestion-de-Inventarios/
 ## Flujo de colaboración
 Repositorio oficial: https://github.com/BenjaminBuitragoC/PROYECTO-DE-SISTEMAS-II-A
 
-Rama del equipo: `equipo3-inventarios`. Los cambios se presentan mediante un Pull Request hacia `main` para revisión del docente.
+Rama del equipo: `equipo3-inventarios`. Crea una rama de trabajo a partir de esa rama y abre un Pull Request hacia `equipo3-inventarios` para que lo revise otro integrante. La integración de la rama del equipo a `main` se gestiona en el [PR #12](https://github.com/BenjaminBuitragoC/PROYECTO-DE-SISTEMAS-II-A/pull/12).
+
+Para revisar los cambios de entradas, salidas y existencias, consulta las [reglas de registro de movimientos](database/README.md#reglas-de-registro-de-movimientos). Si tu equipo necesita relacionar requisitos con criterios de aceptación, usa la [guía de reutilización](docs/guia-reutilizacion.md).
 
 ## Enlace al prototipo Figma
 [Consultar el diseño de inventarios](https://www.figma.com/design/9vZMiaDfXelRAyY4aYGxlj/Sin-t%C3%ADtulo?node-id=0-1)

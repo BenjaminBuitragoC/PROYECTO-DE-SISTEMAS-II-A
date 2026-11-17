@@ -13,6 +13,19 @@ Se pueden reutilizar plantillas genéricas de requisitos, casos de prueba, insta
 4. Revisar que el documento sea claro, consistente y no contenga secretos ni datos sensibles.
 5. Registrar los cambios en un commit descriptivo y proponerlos mediante Pull Request.
 
+### Ejemplo breve de plantilla de requisito
+
+```text
+ID: RF-01
+Nombre: [nombre breve del requisito]
+Actor: [rol que necesita la función]
+Descripción: [qué necesita hacer el sistema]
+Criterios de aceptación: [condiciones observables para considerar completo el requisito]
+Prioridad: [alta, media o baja]
+```
+
+Reemplace los campos entre corchetes por información aprobada del proyecto. Use identificadores consecutivos y criterios que puedan comprobarse durante las pruebas.
+
 ## Propuestas de modificación
 - Abrir una incidencia o Pull Request que explique el problema o la mejora.
 - Mantener el formato y el lenguaje comprensibles para otros equipos.

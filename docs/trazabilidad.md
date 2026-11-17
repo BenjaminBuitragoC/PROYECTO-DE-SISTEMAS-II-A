@@ -28,8 +28,8 @@ Comando: `git blame -L1,12 README.md` (en GitHub: archivo → *Blame*).
 La línea 1 viene del commit inicial del docente; el resto fue escrito por el equipo en `6068097`.
 
 ## 4. Incidencia o Pull Request relacionado
-Pull Request de esta actividad: **[COMPLETAR: pegar enlace del PR de `docs-mejora-proyecto`]**.
-Relaciona la mejora del README (`103411a`) con su revisión y aprobación.
+- Pull Request de esta actividad: [#21](https://github.com/BenjaminBuitragoC/PROYECTO-DE-SISTEMAS-II-A/pull/21) (`docs-mejora-proyecto-jhosepr` → `main` del repo del curso). Relaciona la mejora del README (`103411a`) con su revisión.
+- Pull Request de la entrega anterior: [#10](https://github.com/BenjaminBuitragoC/PROYECTO-DE-SISTEMAS-II-A/pull/10) (`Eventos_JhosepRocabado` → `main`), que contiene los commits `535f533`, `6068097` y `81c7022` de la sección 1. Así se conecta cada commit con el PR que lo propuso.
 
 ## 5. Pregunta de análisis: ¿cómo ayuda a investigar un defecto?
 Si una prueba falla, por ejemplo la validación de correos de `src/validaciones.js`:

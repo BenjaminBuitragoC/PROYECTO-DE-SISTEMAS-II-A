@@ -20,4 +20,9 @@ Los identificadores corresponden al [documento de requisitos](../docs/Requisitos
 
 El [modelo SQL inicial](modelo_inicial.sql) exige cantidades positivas y calcula el saldo en la vista `Existencias`. La operación de salida deberá serializar por producto la lectura del saldo y el registro del movimiento dentro de la misma transacción. Dos salidas simultáneas de 4 unidades sobre un saldo de 5 deben producir una sola salida registrada y un saldo final de 1.
 
-Como caso de aceptación de RF04 y RF06, parte de un producto con saldo de 8 y mínimo de 3. Registra una salida de 5 y comprueba que queda saldo de 3 y se activa la alerta. Intenta luego una salida de 4 y verifica que el saldo sigue en 3 y que el intento rechazado no agregó un movimiento. El [plan inicial de pruebas](../tests/README.md) reúne los casos previstos para la implementación.
+### Casos de aceptación de RF04 y RF06
+
+- **Llegar al mínimo y rechazar una salida posterior.** Con saldo de 8 y mínimo de 3, registra una salida de 5. Debe quedar saldo de 3 y activarse la alerta. Intenta luego una salida de 4 y comprueba que el saldo sigue en 3 y que el intento rechazado no agregó un movimiento al historial.
+- **Agotar exactamente el saldo disponible.** Con saldo de 5 y mínimo de 2, solicita una salida de 5. La operación debe aceptarse, el historial debe contener una única salida de 5 y el saldo debe quedar en 0. El producto debe aparecer en la alerta de stock mínimo.
+
+El [plan inicial de pruebas](../tests/README.md) reúne los casos previstos para la implementación.

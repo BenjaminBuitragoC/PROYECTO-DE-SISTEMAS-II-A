@@ -1,3 +1,3 @@
 # Código fuente
 
-Aquí se incorporará la aplicación de Inventario Claro. La implementación está pendiente; esta entrega define la estructura, los requisitos y el modelo inicial de datos.
+El archivo [`stock.py`](stock.py) calcula cuántas unidades quedan después de una salida válida. Se puede probar por separado mientras se desarrolla la aplicación de Inventario Claro.

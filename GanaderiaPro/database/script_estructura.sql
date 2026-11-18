@@ -517,3 +517,222 @@ BEGIN
 END $EF$;
 COMMIT;
 
+START TRANSACTION;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015040845_AgregarPreneces') THEN
+    CREATE TABLE "Preneces" (
+        "Id" uuid NOT NULL,
+        "AnimalId" uuid NOT NULL,
+        "FechaServicio" date NOT NULL,
+        "FechaProbableParto" date NOT NULL,
+        "FechaParto" date,
+        "Observacion" character varying(500),
+        "FechaRegistro" timestamp with time zone NOT NULL,
+        CONSTRAINT "PK_Preneces" PRIMARY KEY ("Id"),
+        CONSTRAINT "FK_Preneces_Animales_AnimalId" FOREIGN KEY ("AnimalId") REFERENCES "Animales" ("Id") ON DELETE CASCADE
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015040845_AgregarPreneces') THEN
+    CREATE INDEX "IX_Preneces_AnimalId_FechaServicio" ON "Preneces" ("AnimalId", "FechaServicio");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015040845_AgregarPreneces') THEN
+    CREATE INDEX "IX_Preneces_FechaProbableParto" ON "Preneces" ("FechaProbableParto");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015040845_AgregarPreneces') THEN
+    INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+    VALUES ('20261015040845_AgregarPreneces', '10.0.12');
+    END IF;
+END $EF$;
+COMMIT;
+
+START TRANSACTION;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015042523_AgregarTratamientos') THEN
+    CREATE TABLE "Tratamientos" (
+        "Id" uuid NOT NULL,
+        "AnimalId" uuid NOT NULL,
+        "VeterinarioId" uuid NOT NULL,
+        "Motivo" character varying(200) NOT NULL,
+        "Medicamento" character varying(150) NOT NULL,
+        "Dosis" character varying(100) NOT NULL,
+        "FechaInicio" date NOT NULL,
+        "DuracionDias" integer NOT NULL,
+        "Observacion" character varying(500),
+        "FechaRegistro" timestamp with time zone NOT NULL,
+        CONSTRAINT "PK_Tratamientos" PRIMARY KEY ("Id"),
+        CONSTRAINT "FK_Tratamientos_Animales_AnimalId" FOREIGN KEY ("AnimalId") REFERENCES "Animales" ("Id") ON DELETE CASCADE,
+        CONSTRAINT "FK_Tratamientos_Usuarios_VeterinarioId" FOREIGN KEY ("VeterinarioId") REFERENCES "Usuarios" ("Id") ON DELETE RESTRICT
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015042523_AgregarTratamientos') THEN
+    CREATE INDEX "IX_Tratamientos_AnimalId_FechaInicio" ON "Tratamientos" ("AnimalId", "FechaInicio");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015042523_AgregarTratamientos') THEN
+    CREATE INDEX "IX_Tratamientos_VeterinarioId" ON "Tratamientos" ("VeterinarioId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015042523_AgregarTratamientos') THEN
+    INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+    VALUES ('20261015042523_AgregarTratamientos', '10.0.12');
+    END IF;
+END $EF$;
+COMMIT;
+
+START TRANSACTION;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015043345_AgregarNotificaciones') THEN
+    CREATE TABLE "Notificaciones" (
+        "Id" uuid NOT NULL,
+        "RanchoId" uuid NOT NULL,
+        "UsuarioId" uuid NOT NULL,
+        "Tipo" character varying(30) NOT NULL,
+        "Mensaje" character varying(300) NOT NULL,
+        "ReferenciaTipo" character varying(30) NOT NULL,
+        "ReferenciaId" uuid NOT NULL,
+        "Clave" character varying(150) NOT NULL,
+        "Leida" boolean NOT NULL,
+        "Fecha" timestamp with time zone NOT NULL,
+        CONSTRAINT "PK_Notificaciones" PRIMARY KEY ("Id"),
+        CONSTRAINT "FK_Notificaciones_Usuarios_UsuarioId" FOREIGN KEY ("UsuarioId") REFERENCES "Usuarios" ("Id") ON DELETE CASCADE
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015043345_AgregarNotificaciones') THEN
+    CREATE UNIQUE INDEX "IX_Notificaciones_UsuarioId_Clave" ON "Notificaciones" ("UsuarioId", "Clave");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015043345_AgregarNotificaciones') THEN
+    CREATE INDEX "IX_Notificaciones_UsuarioId_Leida" ON "Notificaciones" ("UsuarioId", "Leida");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261015043345_AgregarNotificaciones') THEN
+    INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+    VALUES ('20261015043345_AgregarNotificaciones', '10.0.12');
+    END IF;
+END $EF$;
+COMMIT;
+
+START TRANSACTION;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261111220140_AgregarHistorialAnimal') THEN
+    ALTER TABLE "Preneces" ADD "RegistradoPorId" uuid;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261111220140_AgregarHistorialAnimal') THEN
+    ALTER TABLE "Pesajes" ADD "RegistradoPorId" uuid;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261111220140_AgregarHistorialAnimal') THEN
+    CREATE TABLE "MovimientosCorral" (
+        "Id" uuid NOT NULL,
+        "AnimalId" uuid NOT NULL,
+        "CorralOrigenId" uuid,
+        "CorralOrigen" character varying(60),
+        "CorralDestinoId" uuid,
+        "CorralDestino" character varying(60),
+        "Fecha" timestamp with time zone NOT NULL,
+        "UsuarioId" uuid NOT NULL,
+        CONSTRAINT "PK_MovimientosCorral" PRIMARY KEY ("Id"),
+        CONSTRAINT "FK_MovimientosCorral_Animales_AnimalId" FOREIGN KEY ("AnimalId") REFERENCES "Animales" ("Id") ON DELETE CASCADE,
+        CONSTRAINT "FK_MovimientosCorral_Usuarios_UsuarioId" FOREIGN KEY ("UsuarioId") REFERENCES "Usuarios" ("Id") ON DELETE RESTRICT
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261111220140_AgregarHistorialAnimal') THEN
+    CREATE INDEX "IX_Preneces_RegistradoPorId" ON "Preneces" ("RegistradoPorId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261111220140_AgregarHistorialAnimal') THEN
+    CREATE INDEX "IX_Pesajes_RegistradoPorId" ON "Pesajes" ("RegistradoPorId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261111220140_AgregarHistorialAnimal') THEN
+    CREATE INDEX "IX_MovimientosCorral_AnimalId_Fecha" ON "MovimientosCorral" ("AnimalId", "Fecha");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261111220140_AgregarHistorialAnimal') THEN
+    CREATE INDEX "IX_MovimientosCorral_UsuarioId" ON "MovimientosCorral" ("UsuarioId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261111220140_AgregarHistorialAnimal') THEN
+    ALTER TABLE "Pesajes" ADD CONSTRAINT "FK_Pesajes_Usuarios_RegistradoPorId" FOREIGN KEY ("RegistradoPorId") REFERENCES "Usuarios" ("Id") ON DELETE RESTRICT;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261111220140_AgregarHistorialAnimal') THEN
+    ALTER TABLE "Preneces" ADD CONSTRAINT "FK_Preneces_Usuarios_RegistradoPorId" FOREIGN KEY ("RegistradoPorId") REFERENCES "Usuarios" ("Id") ON DELETE RESTRICT;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261111220140_AgregarHistorialAnimal') THEN
+    INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+    VALUES ('20261111220140_AgregarHistorialAnimal', '10.0.12');
+    END IF;
+END $EF$;
+COMMIT;
+

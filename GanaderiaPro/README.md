@@ -49,9 +49,9 @@ https://www.figma.com/make/LHXFRFGmDY9bDuR7riYt1i/Plataforma-de-Gesti%C3%B3n-Gan
 |---|---|---|
 | Sprint 1 · 49 pts | Sitio público, registro e inicio de sesión, gestión de ganado | ✅ Entregado |
 | Sprint 2 · 48 pts | Baja y pesajes, sanidad, corrales, colaboradores y roles, límites del plan, modo sin conexión | ✅ Entregado (06/10/2026) |
-| Sprint 3 · 48 pts | Reproducción, tratamientos, notificaciones, tablero, socios, asistente y Excel | ⏳ En planificación (19/10 al 02/11/2026) |
+| Sprint 3 · 48 pts | Reproducción, tratamientos, alertas y notificaciones, tablero, socios, historial, asistente y Excel | ✅ Entregado (17/11/2026) |
 
-Calidad al cierre del Sprint 2: **222 pruebas** del servidor y **101** de la aplicación, en verde.
+Calidad al cierre del Sprint 3: **319 pruebas** del servidor y **136** de la aplicación, en verde.
 
 ## Estructura
 

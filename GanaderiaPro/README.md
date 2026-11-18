@@ -40,7 +40,8 @@ actualizada.
 
 ## Prototipo en Figma
 
-Pendiente: el enlace se agrega en el Sprint 3 (ver `figma/enlace_figma.md`).
+https://www.figma.com/make/LHXFRFGmDY9bDuR7riYt1i/Plataforma-de-Gesti%C3%B3n-Ganadera?t=KnFIMc5EejPjaGcc-1
+(también en `figma/enlace_figma.md`).
 
 ## Estado del proyecto
 

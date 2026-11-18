@@ -9,4 +9,5 @@
 | `GanaderiaPro_Backlog_Completo.md` | Backlog completo en texto: estado del proyecto, pendientes y detalle de cada historia |
 | `GanaderiaPro_Backlog_Refinado.docx` | Backlog refinado (versión Word) |
 | `GanaderiaPro_Informe_Sprint2.docx` | Correcciones del jurado, principios de diseño, registro de defectos y SQA |
-| `GanaderiaPro_Diagrama_ER.png` | Diagrama entidad-relación de la base de datos |
+| `GanaderiaPro_Informe_Sprint3.docx` | Historias entregadas, principios y patrones de diseño, modelo de datos, registro de defectos y SQA del Sprint 3 |
+| `GanaderiaPro_Diagrama_ER.png` | Diagrama entidad-relación de la base de datos (12 tablas, al cierre del Sprint 3) |

@@ -57,7 +57,7 @@ Calidad al cierre del Sprint 3: **319 pruebas** del servidor y **136** de la apl
 
 | Carpeta | Contenido |
 |---|---|
-| `docs/` | Canvas, Requisitos, Backlog, Riesgos, informe del Sprint 2 y diagrama entidad-relación |
+| `docs/` | Canvas, Requisitos, Backlog, Riesgos, informes de los Sprints 2 y 3 y diagrama entidad-relación |
 | `figma/` | Enlace al prototipo |
 | `src/` | Código fuente completo; cómo ejecutarlo en `src/README.md` |
 | `database/` | Script de estructura de la base de datos |

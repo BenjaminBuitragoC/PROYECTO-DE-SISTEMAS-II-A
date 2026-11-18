@@ -1,8 +1,8 @@
 # GanaderíaPro · Product Backlog completo
 
 **Sistema de gestión integral de ganado bovino** · Proyecto de Sistemas II
-**Última actualización:** 13/10/2026 (después del cierre del Sprint 2)
-**Repositorio:** https://github.com/AlexVigabriel/GanaderiaPro · **Versión vigente:** Release `sprint-2`
+**Última actualización:** 17/11/2026 (después del cierre del Sprint 3)
+**Repositorio:** https://github.com/AlexVigabriel/GanaderiaPro · **Versión vigente:** Release `sprint-3`
 
 Este documento reúne todo el backlog del proyecto, desde el inicio hasta la última fase planificada:
 la **Parte A** resume el estado real y lo que queda pendiente; la **Parte B** es el backlog refinado completo
@@ -19,11 +19,11 @@ la **Parte A** resume el estado real y lo que queda pendiente; la **Parte B** es
 | Sprint 0 · Planificación | hasta el 31/08/2026 | — | ✅ Cerrado | Product Backlog original, pantallas y documento explicativo |
 | Sprint 1 | 07/09 – 21/09/2026 | 49 | ✅ Entregado | 17 historias: sitio público, autenticación, panel y gestión de ganado. Defensa: 30/09/2026 |
 | Sprint 2 | 21/09 – 06/10/2026 | 48 | ✅ Entregado | 13 historias + correcciones del jurado + HU-66, HU-67 y HU-74. Release `sprint-2` (06/10/2026) |
-| Sprint 3 | 19/10 – 02/11/2026 | 48 | ⏳ Pendiente | 15 historias: dashboard, preñez, tratamientos, socios, notificaciones, asistente y Excel |
+| Sprint 3 | 19/10 – 02/11/2026 | 48 | ✅ Entregado | 15 historias: dashboard, preñez, tratamientos, socios, notificaciones, historial, asistente y Excel. Release `sprint-3` (17/11/2026) |
 | Release 2 | Después del semestre | 64 | ⏳ Pendiente | 20 historias de menor prioridad |
 | Historias nuevas (Sprint 2) | Sin sprint asignado | 29 | ⏳ Pendiente | 8 historias propuestas (HU-64, 65, 68–73) |
 
-**Avance del compromiso del semestre:** 97 de 145 puntos (67 %). Quedan los 48 puntos del Sprint 3.
+**Avance del compromiso del semestre:** 145 de 145 puntos (100 %).
 
 ### A.2 Historias entregadas
 
@@ -44,6 +44,16 @@ la **Parte A** resume el estado real y lo que queda pendiente; la **Parte B** es
 - **Además (fuera de los 48 puntos):** HU-66 carga de varios animales en tabla · HU-67 conteo por categoría ·
   HU-74 categoría del animal · correcciones del jurado del Sprint 1 (validaciones, RN-17 y RN-18) · rediseño visual.
 
+**Sprint 3 · 48 puntos**
+- **Reproducción y sanidad:** HU-56 preñez y parto · HU-57 tratamientos veterinarios.
+- **Alertas:** HU-40 alertas de vacunas, corral lleno y parto próximo (patrón Observer) · HU-41 centro de notificaciones.
+- **Corrales:** HU-53 editar o desactivar corral · HU-25 reasignar animales con registro de movimientos.
+- **Ganado:** HU-22 historial sanitario y de peso.
+- **Socios:** HU-29 registrar socio · HU-30 listado de socios.
+- **Asistente:** HU-36.1 consultar cantidades · HU-38 aviso de datos faltantes al responsable.
+- **Tablero:** HU-12 indicadores generales del rancho.
+- **Excel:** HU-43.1 plantilla · HU-43.2 importar ganado · HU-44 exportar ganado.
+
 ### A.3 Historias pendientes adelantadas en parte
 
 Durante el Sprint 2 se construyeron partes de historias planificadas para más adelante. Al tomarlas, solo falta
@@ -51,9 +61,6 @@ completar lo indicado:
 
 | HU | Fase | Ya existe | Falta |
 |---|---|---|---|
-| HU-53 Editar o desactivar un corral | Sprint 3 | Editar y desactivar (solo corrales vacíos, RN-08) | Revisar criterios de aceptación y cerrarla |
-| HU-25 Reasignar animales entre corrales | Sprint 3 | «Cambiar corral» de un animal desde su ficha | Reasignar varios animales a la vez |
-| HU-22 Historial sanitario y de peso | Sprint 3 | Historial de pesajes y de vacunaciones en la ficha | Vista unificada y tratamientos (HU-57) |
 | HU-61 Editar o revocar el acceso de un colaborador | Release 2 | Cambiar rol y desactivar o reactivar | Editar sus datos |
 | HU-35 Estado y actividad de colaboradores | Release 2 | Estado y último acceso en el listado | Historial de actividad |
 | HU-10 Mantener sesión iniciada | Release 2 | La sesión queda guardada (necesario para el modo sin conexión) | Opción «Recordarme» a elección del usuario |
@@ -61,12 +68,6 @@ completar lo indicado:
 | HU-49 Consultar y cambiar de plan | Release 2 | Tarjeta «Tu plan» con el uso (HU-58) | Cambiar de plan |
 
 ### A.4 Pendiente por fase
-
-**Sprint 3 (48 puntos)** — orden sugerido: primero HU-56 y HU-40, de las que dependen el dashboard y el asistente.
-HU-12 indicadores del rancho · HU-56 preñez y parto · HU-57 tratamiento veterinario · HU-22 historial sanitario y de peso ·
-HU-25 reasignar animales · HU-53 editar o desactivar corral · HU-29 registrar socio · HU-30 listado de socios ·
-HU-40 alertas · HU-41 centro de notificaciones · HU-36.1 consultas de cantidades al asistente ·
-HU-38 aviso de datos faltantes · HU-44 exportar ganado a Excel · HU-43.1 plantilla de importación · HU-43.2 importar desde Excel.
 
 **Release 2 (64 puntos)** — ordenadas por prioridad.
 HU-11 recuperar contraseña · HU-28 historial de vacunación con filtros · HU-13 gráficos · HU-59 vencimiento de la prueba gratuita ·
@@ -90,11 +91,14 @@ HU-70 búsqueda por cámara · HU-71 auditoría de cambios · HU-72 modo claro u
   correcciones del jurado: el backlog pasa de 16 a 18 reglas explícitas.
 - Se entregaron tres historias propuestas fuera del compromiso (HU-66, HU-67 y HU-74).
 - El modo sin conexión se implementó con SQLite en el dispositivo, cola de salida (patrón Outbox) e idempotencia en el servidor.
+- El Sprint 3 estaba planificado del 19/10 al 02/11/2026 y se cerró el 17/11/2026. HU-25 y HU-53 venían en parte del Sprint 2.
+- Las alertas (HU-40) usan el patrón Observer y el tablero (HU-12) el patrón Facade. La base pasó de 8 a 12 tablas.
 
-### A.6 Calidad al cierre del Sprint 2
-- 222 pruebas automáticas del servidor (xUnit) y 101 de la app (Flutter), en verde en GitHub Actions.
-- 9 defectos encontrados y corregidos (ver *GanaderiaPro_Informe_Sprint2.docx*).
-- Respaldo del código y la base de datos en `Respaldos-GanaderiaPro/2026-10-06`.
+### A.6 Calidad al cierre del Sprint 3
+- 319 pruebas automáticas del servidor (xUnit) y 136 de la app (Flutter), en verde en GitHub Actions.
+- Prueba manual de las 15 historias del Sprint 3: correcta.
+- Defectos: 9 en el Sprint 2 y 5 en el Sprint 3, todos corregidos (ver *GanaderiaPro_Informe_Sprint2.docx* y *GanaderiaPro_Informe_Sprint3.docx*).
+- Respaldo del código y la base de datos en `Respaldos-GanaderiaPro/2026-11-17`.
 
 ---
 
@@ -334,7 +338,7 @@ HU-21 se acota a eliminar registros erróneos; las ventas y fallecimientos pasan
 | HU-46 | Visualizar el estado de conexión | Modo sin conexión | 2 | Media | Refinada |
 | HU-47 | Sincronizar datos automáticamente | Modo sin conexión | 5 | Alta | Refinada |
 
-#### 7.3 Sprint 3 · 19 de octubre al 2 de noviembre · 48 puntos · ⏳ Pendiente
+#### 7.3 Sprint 3 · 19 de octubre al 2 de noviembre · 48 puntos · ✅ Entregado (cerrado 17/11/2026)
 
 | ID | Historia de usuario | Épica | Pts | Prioridad | Cambio |
 |---|---|---|---|---|---|

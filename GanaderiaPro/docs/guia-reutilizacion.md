@@ -47,14 +47,20 @@ Este directorio contiene los artefactos del proyecto.
 
 ## 4. Revisión y mantenimiento
 
-| Responsabilidad | Rol propuesto | Función |
-|---|---|---|
-| Elaboración | Integrante que realiza la mejora | Editar plantilla y verificar enlaces |
-| Revisión | Otro integrante autorizado del equipo | Comprobar claridad, formato y pertinencia |
-| Aprobación e integración | Responsable del repositorio o mantenedor autorizado | Aprobar y fusionar el Pull Request |
-| Mantenimiento periódico | Responsable de documentación designado | Mantener el índice actualizado |
+| Responsabilidad | Rol | Responsable en GanaderíaPro | Función |
+|---|---|---|---|
+| Elaboración | Integrante que realiza la mejora | Cualquier integrante del equipo | Editar la plantilla y verificar enlaces |
+| Revisión | Revisor (distinto del autor) | Calizaya Choque William Alejandro / Choquecallata Paco Roberto Carlos / Lazcano Estrella Alejandro (rotativo) | Comprobar claridad, formato, enlaces y ausencia de datos confidenciales |
+| Aprobación e integración | Mantenedor | Vigabriel Arista Alexander (líder técnico) con aprobación del docente propietario del repositorio | Aprobar y fusionar el Pull Request |
+| Mantenimiento periódico | Responsable de documentación | Vigabriel Arista Alexander | Revisar el índice al cierre de cada sprint |
 
-Los roles son una **propuesta**, no una declaración de permisos efectivamente concedidos.
+El autor de un cambio nunca aprueba su propio Pull Request. Si otro equipo reutiliza la plantilla, designa sus propios responsables con la misma estructura de roles.
+
+### Plazos de atención
+
+- Primera respuesta a un Pull Request de mejora: máximo 3 días hábiles.
+- Las observaciones se responden en el mismo Pull Request; el autor corrige mediante nuevos commits en la misma rama.
+- Las contribuciones de otros equipos se reciben como Pull Request desde su fork y se etiquetan con `documentacion`.
 
 ## 5. Flujo InnerSource
 
@@ -62,8 +68,11 @@ Los roles son una **propuesta**, no una declaración de permisos efectivamente c
 
 ## 6. Aplicación al proyecto de referencia
 
-En GanaderíaPro se elaboró una mejora de `GanaderiaPro/docs/README.md` en la rama `docs-mejora-proyecto-ganaderiapro` del fork `AxlRoss-punk/PROYECTO-DE-SISTEMAS-II-A` y se abrió el Pull Request [#14](https://github.com/BenjaminBuitragoC/PROYECTO-DE-SISTEMAS-II-A/pull/14). Esta experiencia sirve como ejemplo práctico de propuesta y revisión, **sin afirmar que la revisión o fusión ya se haya realizado**.
+En GanaderíaPro se elaboró una mejora de `GanaderiaPro/docs/README.md` en la rama `docs-mejora-proyecto-ganaderiapro` del fork `AxlRoss-punk/PROYECTO-DE-SISTEMAS-II-A` y se abrió el Pull Request [#14](https://github.com/BenjaminBuitragoC/PROYECTO-DE-SISTEMAS-II-A/pull/14). Esta experiencia sirve como ejemplo práctico de propuesta y revisión. El Pull Request queda abierto a revisión de los integrantes indicados en la sección 4.
 
-## 7. Evidencia pendiente
+## 7. Cómo otro equipo reutiliza este recurso
 
-Publicar este archivo en `GanaderiaPro/docs/guia-reutilizacion.md` dentro de una rama autorizada del fork, registrar su commit y conservar el enlace al archivo. El archivo todavía no se ha publicado en GitHub.
+1. Hacer fork del repositorio del curso o copiar la plantilla de la sección 2.
+2. Crear una rama `docs-indice-<equipo>` en su propio repositorio.
+3. Adaptar la tabla con sus documentos reales y abrir un Pull Request interno.
+4. Si encuentra una mejora aplicable a todos los equipos, proponerla mediante Pull Request a este archivo siguiendo las reglas de la sección 3.

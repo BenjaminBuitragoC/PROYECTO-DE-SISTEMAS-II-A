@@ -15,6 +15,8 @@ Esta carpeta contiene los documentos de análisis, planificación, diseño y seg
 | [GanaderiaPro_Backlog_Refinado.docx](GanaderiaPro_Backlog_Refinado.docx) | Backlog refinado (versión Word) |
 | [GanaderiaPro_Informe_Sprint2.docx](GanaderiaPro_Informe_Sprint2.docx) | Correcciones del jurado, principios de diseño, registro de defectos y SQA |
 | [GanaderiaPro_Diagrama_ER.png](GanaderiaPro_Diagrama_ER.png) | Diagrama entidad-relación de la base de datos |
+| [guia-reutilizacion.md](guia-reutilizacion.md) | Guía InnerSource para reutilizar este índice en otros equipos |
+| [seguridad-y-permisos.md](seguridad-y-permisos.md) | Verificación de seguridad del repositorio y matriz de permisos |
 
 ## Instrucciones de consulta
 

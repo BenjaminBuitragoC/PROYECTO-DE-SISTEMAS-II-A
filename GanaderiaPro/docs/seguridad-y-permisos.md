@@ -7,7 +7,7 @@ Revisión realizada el 18/11/2026 sobre el repositorio del curso `BenjaminBuitra
 | # | Aspecto | Estado observado | Riesgo | Acción recomendada |
 |---|---|---|---|---|
 | 1 | Visibilidad | Repositorio del curso **público**; fork público | Cualquier persona puede leer el código y todo el historial de commits | Mantener público por ser académico, pero revisar cada commit antes de publicar: nada de credenciales ni datos personales reales |
-| 2 | Accesos | La cuenta `AlexVigabriel` tiene permiso **write/triage** (sin admin); la cuenta `AxlRoss-punk` solo **read** y contribuye por fork | Una cuenta con escritura puede subir cambios a cualquier rama no protegida, incluidas ramas de otros equipos | Conceder escritura solo a quien la necesite; el resto contribuye por fork + Pull Request |
+| 2 | Accesos | 13 colaboradores: el docente (admin) y **12 estudiantes con write sobre todo el repositorio** (incluidos `AlexVigabriel` y `williamCR555`); `AxlRoss-punk` solo **read** y contribuye por fork | Cualquier estudiante puede modificar o borrar la rama de otro equipo o `main`, porque ninguna rama está protegida | Conceder escritura solo a quien la necesite; el resto contribuye por fork + Pull Request |
 | 3 | Rama principal | `main` **no está protegida** (`protected: false`); `GanaderiaPro_Vigabriel` tampoco | Un colaborador con escritura puede hacer push directo o forzado a `main` sin revisión | Activar regla de protección en `main`: PR obligatorio, 1 aprobación mínima, bloquear force-push y borrado |
 | 4 | Pull Requests | 21 PR en el repositorio; solo #15 fusionado. El PR #14 está abierto, en espera de revisión | Sin protección, la revisión depende de la disciplina del equipo y no de una regla | Exigir aprobación de un revisor distinto del autor antes de fusionar |
 | 5 | Secretos | `appsettings*.json` no contiene claves; la clave JWT se lee de `dotnet user-secrets`. `.env` está en `.gitignore`. **`docker-compose.yml` contiene la contraseña de PostgreSQL en texto plano**, agregada en el commit `c16d223` (13/10/2026) | La contraseña queda en el historial público aunque se borre después | Moverla a `.env` (`POSTGRES_PASSWORD=${POSTGRES_PASSWORD}`), cambiarla en todo entorno donde se haya reutilizado y activar *secret scanning / push protection* |
@@ -30,9 +30,9 @@ Revisión realizada el 18/11/2026 sobre el repositorio del curso `BenjaminBuitra
 | Benjamín H. Buitrago Conde | Docente / propietario | Admin (propietario) | Admin |
 | Vigabriel Arista Alexander — `AlexVigabriel` | Líder técnico y desarrollador | Write + Triage | Write sobre la rama del equipo; sin admin |
 | Vigabriel Arista Alexander — `AxlRoss-punk` | Cuenta secundaria del mismo integrante | Read (contribuye por fork) | Ninguno adicional (debería unificarse en una sola cuenta) |
-| Calizaya Choque William Alejandro | Desarrollador / revisor | Por confirmar con el integrante | Read + PR desde fork; revisor del equipo |
-| Choquecallata Paco Roberto Carlos | Desarrollador / revisor | Por confirmar con el integrante | Read + PR desde fork; revisor del equipo |
-| Lazcano Estrella Alejandro | Desarrollador / revisor | Por confirmar con el integrante | Read + PR desde fork; revisor del equipo |
+| Calizaya Choque William Alejandro — `williamCR555` | Desarrollador / revisor | Write + Triage | Revisor del equipo; escritura limitada a la rama del equipo |
+| Choquecallata Paco Roberto Carlos | Desarrollador / revisor | Sin cuenta identificable entre los colaboradores | Read + PR desde fork; invitar si va a aprobar PR |
+| Lazcano Estrella Alejandro | Desarrollador / revisor | Sin cuenta identificable entre los colaboradores | Read + PR desde fork; invitar si va a aprobar PR |
 
 ### Matriz propuesta por rol
 

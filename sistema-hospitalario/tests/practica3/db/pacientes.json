@@ -1,0 +1,22 @@
+[
+  {
+    "id": "PAC-0001",
+    "documento": "1234567",
+    "nombre": "Ana Pérez",
+    "fechaNacimiento": "1995-03-12",
+    "edad": 31,
+    "telefono": "70012345",
+    "correo": "ana@example.com",
+    "creadoAt": "2026-11-19"
+  },
+  {
+    "id": "PAC-0002",
+    "documento": "7654321",
+    "nombre": "Luis Gómez",
+    "fechaNacimiento": "1988-07-01",
+    "edad": 38,
+    "telefono": null,
+    "correo": null,
+    "creadoAt": "2026-11-19"
+  }
+]

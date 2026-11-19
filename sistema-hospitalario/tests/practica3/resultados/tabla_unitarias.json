@@ -1,0 +1,105 @@
+[
+  {
+    "ejercicio": 1,
+    "caso": "dato válido (35)",
+    "entrada": "35",
+    "esperado": "aceptar",
+    "obtenido": "aceptar",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 1,
+    "caso": "dato vacío",
+    "entrada": "",
+    "esperado": "rechazar",
+    "obtenido": "rechazar: La edad del paciente es obligatoria.",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 1,
+    "caso": "dato negativo",
+    "entrada": "-5",
+    "esperado": "rechazar",
+    "obtenido": "rechazar: La edad no puede ser negativa.",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 1,
+    "caso": "fuera de rango (150)",
+    "entrada": "150",
+    "esperado": "rechazar",
+    "obtenido": "rechazar: La edad está fuera de rango (0–120 años).",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 1,
+    "caso": "formato incorrecto (\"abc\")",
+    "entrada": "abc",
+    "esperado": "rechazar",
+    "obtenido": "rechazar: La edad debe ser un número entero (formato incorrecto).",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 2,
+    "caso": "valores normales: cardiología sin urgencia",
+    "esperadoManual": "150",
+    "obtenido": "150",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 2,
+    "caso": "cero descuento sobre pediatría = 100",
+    "esperadoManual": "100",
+    "obtenido": "100",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 2,
+    "caso": "caso límite: descuento = subtotal → total 0",
+    "esperadoManual": "0",
+    "obtenido": "0",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 2,
+    "caso": "urgencia cardiología (150+50=200)",
+    "esperadoManual": "200",
+    "obtenido": "200",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 3,
+    "caso": "válido: adulto 1990-05-10",
+    "esperado": "aceptar",
+    "obtenido": "aceptar (edad 36)",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 3,
+    "caso": "inválido: fecha futura",
+    "esperado": "rechazar",
+    "obtenido": "rechazar: La fecha de nacimiento no puede ser futura.",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 3,
+    "caso": "inválido: formato incorrecto",
+    "esperado": "rechazar",
+    "obtenido": "rechazar: Fecha de nacimiento con formato inválido (use YYYY-MM-DD).",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 3,
+    "caso": "válido: recién nacido (=hoy)",
+    "esperado": "aceptar",
+    "obtenido": "aceptar (edad 0)",
+    "resultado": "OK"
+  },
+  {
+    "ejercicio": 3,
+    "caso": "inválido: año imposible (1800)",
+    "esperado": "rechazar",
+    "obtenido": "rechazar: La edad resultante está fuera del rango permitido (0–120).",
+    "resultado": "OK"
+  }
+]

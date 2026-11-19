@@ -40,7 +40,8 @@ actualizada.
 
 ## Prototipo en Figma
 
-Pendiente: el enlace se agrega en el Sprint 3 (ver `figma/enlace_figma.md`).
+https://www.figma.com/make/LHXFRFGmDY9bDuR7riYt1i/Plataforma-de-Gesti%C3%B3n-Ganadera?t=KnFIMc5EejPjaGcc-1
+(también en `figma/enlace_figma.md`).
 
 ## Estado del proyecto
 
@@ -48,15 +49,15 @@ Pendiente: el enlace se agrega en el Sprint 3 (ver `figma/enlace_figma.md`).
 |---|---|---|
 | Sprint 1 · 49 pts | Sitio público, registro e inicio de sesión, gestión de ganado | ✅ Entregado |
 | Sprint 2 · 48 pts | Baja y pesajes, sanidad, corrales, colaboradores y roles, límites del plan, modo sin conexión | ✅ Entregado (06/10/2026) |
-| Sprint 3 · 48 pts | Reproducción, tratamientos, notificaciones, tablero, socios, asistente y Excel | ⏳ En planificación (19/10 al 02/11/2026) |
+| Sprint 3 · 48 pts | Reproducción, tratamientos, alertas y notificaciones, tablero, socios, historial, asistente y Excel | ✅ Entregado (17/11/2026) |
 
-Calidad al cierre del Sprint 2: **222 pruebas** del servidor y **101** de la aplicación, en verde.
+Calidad al cierre del Sprint 3: **319 pruebas** del servidor y **136** de la aplicación, en verde.
 
 ## Estructura
 
 | Carpeta | Contenido |
 |---|---|
-| `docs/` | Canvas, Requisitos, Backlog, Riesgos, informe del Sprint 2 y diagrama entidad-relación |
+| `docs/` | Canvas, Requisitos, Backlog, Riesgos, informes de los Sprints 2 y 3 y diagrama entidad-relación |
 | `figma/` | Enlace al prototipo |
 | `src/` | Código fuente completo; cómo ejecutarlo en `src/README.md` |
 | `database/` | Script de estructura de la base de datos |

@@ -14,7 +14,8 @@ Esta carpeta contiene los documentos de análisis, planificación, diseño y seg
 | [GanaderiaPro_Backlog_Completo.md](GanaderiaPro_Backlog_Completo.md) | Backlog completo en texto: estado del proyecto, pendientes y detalle de cada historia |
 | [GanaderiaPro_Backlog_Refinado.docx](GanaderiaPro_Backlog_Refinado.docx) | Backlog refinado (versión Word) |
 | [GanaderiaPro_Informe_Sprint2.docx](GanaderiaPro_Informe_Sprint2.docx) | Correcciones del jurado, principios de diseño, registro de defectos y SQA |
-| [GanaderiaPro_Diagrama_ER.png](GanaderiaPro_Diagrama_ER.png) | Diagrama entidad-relación de la base de datos |
+| [GanaderiaPro_Informe_Sprint3.docx](GanaderiaPro_Informe_Sprint3.docx) | Historias entregadas, principios y patrones de diseño, modelo de datos, registro de defectos y SQA del Sprint 3 |
+| [GanaderiaPro_Diagrama_ER.png](GanaderiaPro_Diagrama_ER.png) | Diagrama entidad-relación de la base de datos (12 tablas, al cierre del Sprint 3) |
 | [guia-reutilizacion.md](guia-reutilizacion.md) | Guía InnerSource para reutilizar este índice en otros equipos |
 | [seguridad-y-permisos.md](seguridad-y-permisos.md) | Verificación de seguridad del repositorio y matriz de permisos |
 

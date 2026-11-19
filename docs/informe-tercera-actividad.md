@@ -12,15 +12,20 @@ trazabilidad e inteligencia artificial al repositorio
 
 ## 2. Contribución y revisión
 
-- Rama de trabajo: `docs-mejora-proyecto-licramires`.
+- Rama de trabajo: `docs-mejora-proyecto-werner-hans-von-borries-soria`.
 - Artefactos mejorados: `README.md` y `docs/guia-reutilizacion.md`.
-- Commit: `docs: mejorar flujo de contribución y guía de reutilización`.
-- Pull Request: se debe abrir hacia `main` con este informe como descripción.
+- Commits realizados: `5afa052` (`docs: completar tercera actividad de autoaprendizaje`)
+  y `e1b7f28` (`chore: ignorar archivos generados de Python`).
+- Pull Request: pendiente de publicar hasta que la rama se envíe al remoto
+  por autorización del responsable de GitHub.
+- Título propuesto: `docs: completar la tercera actividad de autoaprendizaje`.
+- Descripción propuesta: mejora el README y agrega InnerSource, seguridad,
+  permisos, trazabilidad, un ejercicio de IA con pruebas y el informe integrado.
 - Revisión solicitada: otro integrante debe verificar claridad, enlaces y ausencia
   de información sensible.
 
-La rama exacta `docs-mejora-proyecto` ya existía en el repositorio, por lo que se
-usó un nombre identificable para no modificar el trabajo de otro integrante.
+La rama indicada por el usuario se creó desde `main`; no se realizaron cambios
+directos sobre la rama principal.
 
 ## 3. InnerSource
 
@@ -102,7 +107,7 @@ La propuesta final revisada está en
 prefirió `re.fullmatch`, se rechazaron espacios y se añadieron casos límite
 como cadena vacía, doble arroba y dominio sin punto.
 
-Ejecución prevista:
+Ejecución real:
 
 ```text
 python docs/test_validacion_email.py -v

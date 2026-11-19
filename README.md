@@ -24,4 +24,5 @@ commits, documentos o ejemplos.
 
 - [Guía de reutilización e InnerSource](docs/guia-reutilizacion.md)
 - [Informe de la tercera actividad de autoaprendizaje](docs/informe-tercera-actividad.md)
+- [PDF de la tercera actividad de autoaprendizaje](docs/Informe-Tercera-Actividad-Autoaprendizaje.pdf)
 - [Ejercicio de validación de correo](docs/actividad_7_validacion_email.py)

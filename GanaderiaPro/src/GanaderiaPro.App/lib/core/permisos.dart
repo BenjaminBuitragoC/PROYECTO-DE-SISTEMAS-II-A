@@ -1,0 +1,28 @@
+// HU-34: módulos sobre los que el servidor da permisos. Los niveles (Ninguno,
+// Lectura, Escritura) llegan del servidor al iniciar sesión: la matriz vive
+// en un solo lugar, el backend.
+abstract final class Modulos {
+  static const ganado = 'Ganado';
+  static const pesaje = 'Pesaje';
+  static const corrales = 'Corrales';
+  static const sanidad = 'Sanidad';
+  // HU-56: preñez y parto.
+  static const reproduccion = 'Reproduccion';
+  static const colaboradores = 'Colaboradores';
+  static const tablero = 'Tablero';
+  // HU-58: plan del rancho. Solo el propietario.
+  static const configuracion = 'Configuracion';
+  // HU-43 y HU-44: Excel de ganado.
+  static const importarExcel = 'ImportarExcel';
+  static const exportarExcel = 'ExportarExcel';
+}
+
+// Módulo de cada ruta protegida (las que no están, como el tablero, las ve
+// cualquier usuario con sesión).
+const moduloDeRuta = {
+  '/ganado': Modulos.ganado,
+  '/corrales': Modulos.corrales,
+  '/sanidad': Modulos.sanidad,
+  '/colaboradores': Modulos.colaboradores,
+  '/socios': Modulos.colaboradores,
+};

@@ -736,3 +736,188 @@ BEGIN
 END $EF$;
 COMMIT;
 
+START TRANSACTION;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261118190000_RegistrarEstadoAnimal') THEN
+    ALTER TABLE "Preneces" ADD "PartoRegistradoPorId" uuid;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261118190000_RegistrarEstadoAnimal') THEN
+    CREATE TABLE "EventosEstadoAnimal" (
+        "Id" uuid NOT NULL,
+        "AnimalId" uuid NOT NULL,
+        "EstadoAnterior" character varying(20) NOT NULL,
+        "EstadoNuevo" character varying(20) NOT NULL,
+        "FechaEvento" date NOT NULL,
+        "FechaRegistro" timestamp with time zone NOT NULL,
+        "UsuarioId" uuid,
+        "Observacion" character varying(500),
+        CONSTRAINT "PK_EventosEstadoAnimal" PRIMARY KEY ("Id"),
+        CONSTRAINT "FK_EventosEstadoAnimal_Animales_AnimalId" FOREIGN KEY ("AnimalId") REFERENCES "Animales" ("Id") ON DELETE CASCADE,
+        CONSTRAINT "FK_EventosEstadoAnimal_Usuarios_UsuarioId" FOREIGN KEY ("UsuarioId") REFERENCES "Usuarios" ("Id") ON DELETE RESTRICT
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261118190000_RegistrarEstadoAnimal') THEN
+    CREATE INDEX "IX_EventosEstadoAnimal_AnimalId_FechaEvento_FechaRegistro" ON "EventosEstadoAnimal" ("AnimalId", "FechaEvento", "FechaRegistro");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261118190000_RegistrarEstadoAnimal') THEN
+    CREATE INDEX "IX_EventosEstadoAnimal_UsuarioId" ON "EventosEstadoAnimal" ("UsuarioId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261118190000_RegistrarEstadoAnimal') THEN
+    CREATE INDEX "IX_Preneces_PartoRegistradoPorId" ON "Preneces" ("PartoRegistradoPorId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261118190000_RegistrarEstadoAnimal') THEN
+    ALTER TABLE "Preneces" ADD CONSTRAINT "FK_Preneces_Usuarios_PartoRegistradoPorId" FOREIGN KEY ("PartoRegistradoPorId") REFERENCES "Usuarios" ("Id") ON DELETE RESTRICT;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261118190000_RegistrarEstadoAnimal') THEN
+    INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+    VALUES ('20261118190000_RegistrarEstadoAnimal', '10.0.12');
+    END IF;
+END $EF$;
+COMMIT;
+
+START TRANSACTION;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    ALTER TABLE "Tratamientos" RENAME COLUMN "Motivo" TO "Diagnostico";
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    ALTER TABLE "Tratamientos" ALTER COLUMN "Diagnostico" TYPE character varying(100);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    ALTER TABLE "Tratamientos" ALTER COLUMN "Observacion" TYPE character varying(300);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    ALTER TABLE "Tratamientos" ADD "FechaFinalizacion" date;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    ALTER TABLE "Tratamientos" ADD "FinalizadoPorId" uuid;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    ALTER TABLE "Tratamientos" ADD "Resultado" character varying(20);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    ALTER TABLE "Preneces" ADD "Diagnostico" character varying(20);
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    ALTER TABLE "Preneces" ADD "FechaAborto" date;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    ALTER TABLE "Preneces" ADD "FechaDiagnostico" date;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    CREATE TABLE "SeguimientosTratamiento" (
+        "Id" uuid NOT NULL,
+        "TratamientoId" uuid NOT NULL,
+        "Fecha" date NOT NULL,
+        "Evolucion" character varying(20) NOT NULL,
+        "Nota" character varying(300),
+        "RegistradoPorId" uuid NOT NULL,
+        "FechaRegistro" timestamp with time zone NOT NULL,
+        CONSTRAINT "PK_SeguimientosTratamiento" PRIMARY KEY ("Id"),
+        CONSTRAINT "FK_SeguimientosTratamiento_Tratamientos_TratamientoId" FOREIGN KEY ("TratamientoId") REFERENCES "Tratamientos" ("Id") ON DELETE CASCADE,
+        CONSTRAINT "FK_SeguimientosTratamiento_Usuarios_RegistradoPorId" FOREIGN KEY ("RegistradoPorId") REFERENCES "Usuarios" ("Id") ON DELETE RESTRICT
+    );
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    CREATE INDEX "IX_Tratamientos_FinalizadoPorId" ON "Tratamientos" ("FinalizadoPorId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    CREATE INDEX "IX_SeguimientosTratamiento_RegistradoPorId" ON "SeguimientosTratamiento" ("RegistradoPorId");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    CREATE UNIQUE INDEX "IX_SeguimientosTratamiento_TratamientoId_Fecha" ON "SeguimientosTratamiento" ("TratamientoId", "Fecha");
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    ALTER TABLE "Tratamientos" ADD CONSTRAINT "FK_Tratamientos_Usuarios_FinalizadoPorId" FOREIGN KEY ("FinalizadoPorId") REFERENCES "Usuarios" ("Id") ON DELETE RESTRICT;
+    END IF;
+END $EF$;
+
+DO $EF$
+BEGIN
+    IF NOT EXISTS(SELECT 1 FROM "__EFMigrationsHistory" WHERE "MigrationId" = '20261119181019_SeguimientoTratamientoYEventosPrenez') THEN
+    INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+    VALUES ('20261119181019_SeguimientoTratamientoYEventosPrenez', '10.0.12');
+    END IF;
+END $EF$;
+COMMIT;
+

@@ -10,4 +10,5 @@
 | `GanaderiaPro_Backlog_Refinado.docx` | Backlog refinado (versión Word) |
 | `GanaderiaPro_Informe_Sprint2.docx` | Correcciones del jurado, principios de diseño, registro de defectos y SQA |
 | `GanaderiaPro_Informe_Sprint3.docx` | Historias entregadas, principios y patrones de diseño, modelo de datos, registro de defectos y SQA del Sprint 3 |
-| `GanaderiaPro_Diagrama_ER.png` | Diagrama entidad-relación de la base de datos (12 tablas, al cierre del Sprint 3) |
+| `GanaderiaPro_Requisitos_Correccion_Sprint3.docx` | Requisitos de corrección de la revisión del Sprint 3 (RC-01 a RC-11), con sus fuentes |
+| `GanaderiaPro_Diagrama_ER.png` | Diagrama entidad-relación de la base de datos (14 tablas, con las correcciones del Sprint 3) |
